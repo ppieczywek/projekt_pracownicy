@@ -1,0 +1,142 @@
+[
+    {
+        "imie": "Jan",
+        "nazwisko": "Kowalski",
+        "zarobki_brutto": 5000,
+        "dzial": "HR",
+        "data_zatrudnienia": "2021-03-15"
+    },
+    {
+        "imie": "Anna",
+        "nazwisko": "Nowak",
+        "zarobki_brutto": 7500,
+        "dzial": "Finanse",
+        "data_zatrudnienia": "2020-06-10"
+    },
+    {
+        "imie": "Piotr",
+        "nazwisko": "Wiśniewski",
+        "zarobki_brutto": 6200,
+        "dzial": "IT",
+        "data_zatrudnienia": "2022-01-20"
+    },
+    {
+        "imie": "Katarzyna",
+        "nazwisko": "Wójcik",
+        "zarobki_brutto": 9800,
+        "dzial": "Sprzedaz",
+        "data_zatrudnienia": "2019-11-05"
+    },
+    {
+        "imie": "Marek",
+        "nazwisko": "Lewandowski",
+        "zarobki_brutto": 6700,
+        "dzial": "Finanse",
+        "data_zatrudnienia": "2018-08-30"
+    },
+    {
+        "imie": "Joanna",
+        "nazwisko": "Zielińska",
+        "zarobki_brutto": 12500,
+        "dzial": "IT",
+        "data_zatrudnienia": "2023-02-10"
+    },
+    {
+        "imie": "Tomasz",
+        "nazwisko": "Krawczyk",
+        "zarobki_brutto": 7200,
+        "dzial": "Sprzedaz",
+        "data_zatrudnienia": "2021-09-25"
+    },
+    {
+        "imie": "Agnieszka",
+        "nazwisko": "Szymańska",
+        "zarobki_brutto": 4600,
+        "dzial": "HR",
+        "data_zatrudnienia": "2020-04-14"
+    },
+    {
+        "imie": "Krzysztof",
+        "nazwisko": "Dąbrowski",
+        "zarobki_brutto": 7100,
+        "dzial": "Finanse",
+        "data_zatrudnienia": "2019-12-03"
+    },
+    {
+        "imie": "Barbara",
+        "nazwisko": "Pawlak",
+        "zarobki_brutto": 14000,
+        "dzial": "HR",
+        "data_zatrudnienia": "2022-07-19"
+    },
+    {
+        "imie": "Łukasz",
+        "nazwisko": "Zawadzki",
+        "zarobki_brutto": 8200,
+        "dzial": "IT",
+        "data_zatrudnienia": "2018-05-22"
+    },
+    {
+        "imie": "Paweł",
+        "nazwisko": "Kaczmarek",
+        "zarobki_brutto": 6700,
+        "dzial": "Finanse",
+        "data_zatrudnienia": "2017-09-18"
+    },
+    {
+        "imie": "Maria",
+        "nazwisko": "Majewska",
+        "zarobki_brutto": 9200,
+        "dzial": "Sprzedaz",
+        "data_zatrudnienia": "2021-11-29"
+    },
+    {
+        "imie": "Ewa",
+        "nazwisko": "Bąk",
+        "zarobki_brutto": 13000,
+        "dzial": "IT",
+        "data_zatrudnienia": "2019-04-12"
+    },
+    {
+        "imie": "Adam",
+        "nazwisko": "Ostrowski",
+        "zarobki_brutto": 5500,
+        "dzial": "HR",
+        "data_zatrudnienia": "2023-06-03"
+    },
+    {
+        "imie": "Jacek",
+        "nazwisko": "Górski",
+        "zarobki_brutto": 11200,
+        "dzial": "Sprzedaz",
+        "data_zatrudnienia": "2020-02-16"
+    },
+    {
+        "imie": "Wojciech",
+        "nazwisko": "Sobczak",
+        "zarobki_brutto": 14800,
+        "dzial": "Finanse",
+        "data_zatrudnienia": "2022-12-05"
+    },
+    {
+        "imie": "Iwona",
+        "nazwisko": "Król",
+        "zarobki_brutto": 7300,
+        "dzial": "IT",
+        "data_zatrudnienia": "2021-08-27"
+    },
+    {
+        "imie": "Beata",
+        "nazwisko": "Mazurek",
+        "zarobki_brutto": 4700,
+        "dzial": "HR",
+        "data_zatrudnienia": "2020-07-14"
+    },
+    {
+        "imie": "Grzegorz",
+        "nazwisko": "Kubiak",
+        "zarobki_brutto": 10400,
+        "dzial": "Sprzedaz",
+        "data_zatrudnienia": "2019-03-25"
+    }
+]

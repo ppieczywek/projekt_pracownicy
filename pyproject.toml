@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sample_project"
+version = "0.1.0"
+requires-python = ">=3.8"
+description = "Homework project"
+authors = [
+    { name = "Piotr", email = "pieczywek.piotr@gmail.com" }
+]
+dependencies = [
+    "requests>=2.25",
+    "python-dotenv==1.0.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
