@@ -31,7 +31,10 @@ class Employee(BaseModel):
 def read_employee_data(file_path: str) -> List[Employee]:
 
     if isinstance(file_path, str) is False:
-        raise TypeError
+        raise TypeError("Expected string with input file path")
+
+    if file_path.endswith((".json")) is False:
+        raise ValueError("Extension must be .json")
 
     with open(file_path, 'r', encoding="utf8") as input_file:
         data = json.load(input_file)
@@ -63,8 +66,8 @@ def get_salary_stats(emploee_data: List[Employee]) -> Dict:
                             'median': median(zarobki)}
         return stats
 
-    except AttributeError:
-        raise AttributeError()
+    except AttributeError as e:
+        raise AttributeError(f"Wrong dictionary key {e}")
 
 
 def save_data(output_file: str, data: dict) -> None:
