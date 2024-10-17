@@ -46,28 +46,28 @@ def read_employee_data(file_path: str) -> List[Employee]:
     return validated_data
 
 
-def get_salary_stats(emploee_data: List[Employee]) -> Dict:
+def get_salary_stats(employees_data: List[Employee]) -> Dict:
 
-    if isinstance(emploee_data, list) is False:
-        raise TypeError("List of Employee class objects")
+    if isinstance(employees_data, list) is False:
+        raise TypeError("Expected list of Employee class objects")
 
     try:
-        salary = {}
+        salary_data = {}
         stats = {}
-        for employee in emploee_data:
-            if salary.get(employee.dzial, None) is None:
-                salary[employee.dzial] = [employee.zarobki_brutto]
+        for employee in employees_data:
+            if salary_data.get(employee.dzial, None) is None:
+                salary_data[employee.dzial] = [employee.zarobki_brutto]
             else:
-                salary[employee.dzial].append(employee.zarobki_brutto)
-        for dzial, zarobki in salary.items():
-            stats[dzial] = {'lower': 0.95*min(zarobki),
-                            'upper': 1.10*max(zarobki),
-                            'mean': mean(zarobki),
-                            'median': median(zarobki)}
+                salary_data[employee.dzial].append(employee.zarobki_brutto)
+        for division, salary in salary_data.items():
+            stats[division] = {'lower': 0.95*min(salary),
+                               'upper': 1.10*max(salary),
+                               'mean': mean(salary),
+                               'median': median(salary)}
         return stats
 
     except AttributeError as e:
-        raise AttributeError(f"Wrong dictionary key {e}")
+        raise AttributeError(f"Wrong dictionary key: {e}")
 
 
 def save_data(output_file: str, data: dict) -> None:
@@ -85,11 +85,11 @@ def save_data(output_file: str, data: dict) -> None:
         with open(output_file, 'w') as f:
             f.write(
                 "dzial,srednia_wynagrodzen,mediana_wynagrodzen, dolne_widelki,gorne_widelki\n")
-            for dzial, statystyki in data.items():
-                f.write((f"{dzial}, {statystyki['mean']},"
-                        f"{statystyki['median']},"
-                         f"{statystyki['lower']},"
-                         f"{statystyki['upper']}\n"))
+            for division, stats in data.items():
+                f.write((f"{division}, {stats['mean']},"
+                        f"{stats['median']},"
+                         f"{stats['lower']},"
+                         f"{stats['upper']}\n"))
     except KeyError as e:
         raise KeyError(f"Error: unexpected dictionary key: {e}")
 
