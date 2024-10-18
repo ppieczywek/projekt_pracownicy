@@ -29,7 +29,14 @@ class Employee(BaseModel):
 
 
 def read_employee_data(file_path: str) -> List[Employee]:
+    """Read employees data from JSON file.
 
+    Args:
+        file_path (str): path to JSON file
+
+    Returns:
+        List[Employee]: returns list of Employee class objects
+    """
     if isinstance(file_path, str) is False:
         raise TypeError("Expected string with input file path")
 
@@ -47,7 +54,21 @@ def read_employee_data(file_path: str) -> List[Employee]:
 
 
 def get_salary_stats(employees_data: List[Employee]) -> Dict:
+    """
+    Calculates salary statistics in relation to the 
+    company's department. Calculated statistics are: median salary, 
+    mean salary, upper limit of salary, lower limit of salary.
 
+    Args:
+        employees_data (List[Employee]): 
+        List of Employee class objects.
+
+    Returns:
+        Dict: 
+        Dictionary of salary statistics calculated in relation 
+        to the company's department.
+
+    """
     if isinstance(employees_data, list) is False:
         raise TypeError("Expected list of Employee class objects")
 
@@ -71,7 +92,18 @@ def get_salary_stats(employees_data: List[Employee]) -> Dict:
 
 
 def save_data(output_file: str, data: dict) -> None:
+    """
+    Saves salary statitstics into csv file.
 
+    Args:
+        output_file (str):
+        Path to output csv file.
+
+        data (dict):
+        Dictionary of salary statistics calculated in relation 
+        to the company's department
+
+    """
     if isinstance(output_file, str) is False:
         raise TypeError("Expected output file path as string")
 
