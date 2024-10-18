@@ -11,8 +11,8 @@ authors = [
     { name = "Piotr", email = "pieczywek.piotr@gmail.com" }
 ]
 dependencies = [
-    "requests>=2.25",
-    "python-dotenv==1.0.1"
+    "pydantic",
+    "argparse"
 ]
 
 [tool.setuptools.packages.find]
