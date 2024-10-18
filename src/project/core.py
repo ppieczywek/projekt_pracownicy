@@ -9,7 +9,7 @@ class Project:
         self.input = input
         self.output = output
 
-    def process(self, data: int) -> int:
+    def process(self) -> None:
         data = read_employee_data(self.input)
         stats = get_salary_stats(data)
         save_data(self.output, stats)

@@ -7,5 +7,5 @@ if __name__ == "__main__":
     parser.add_argument("output")
     args = parser.parse_args()
 
-    project = Project(args.inpur, args.output)
+    project = Project(args.input, args.output)
     project.process()
